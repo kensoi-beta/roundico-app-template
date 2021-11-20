@@ -48,11 +48,13 @@
     font-family: 'Roboto'; 
     transition: 0.1s;
     border: 2px solid #888;
+    transform: translateY(2px);
 }
 .RoundICO-tumble .item.selected {
     color: #FFFFFF;
     cursor: pointer;
     border-color: #FFFFFF;
+    transform: translateY(0);
 }
 
 .RoundICO-tumble .item.selected:hover {

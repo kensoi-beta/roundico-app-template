@@ -1,6 +1,5 @@
 import './../css/Footer.css';
 import Logo from './../img/roundico.svg';
-import { Link } from 'react-router-dom';
 import { nanoid } from 'nanoid'
 
 function FooterRow(item) {

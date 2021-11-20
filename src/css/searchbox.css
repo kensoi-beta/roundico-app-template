@@ -125,12 +125,17 @@
   padding: 0 8px;
   box-sizing: border-box;
   outline: none!important;
-  border: 2px solid #fff;
+  border: 2px solid #888;
   font-family: 'Roboto'; 
   white-space: nowrap;
   overflow: hidden;
+  transition: 0.1s;
 }
-
+.search-box-input:focus {
+  transform: translateY(2px);
+  border-color: #fff;
+  
+}
 .search-box .search-box-input:before{
   content: "";
   width: 8px;
