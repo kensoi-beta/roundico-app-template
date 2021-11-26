@@ -57,13 +57,13 @@ function Footer() {
             {
                 isHeader: false,
                 title: 'Контакты',
-                path: {pathname: "https://www.kensoi.ru/contact/"},
+                path: {pathname: "https://www.dshdev.ru/contact/"},
                 target: "_self"
             },
             {
                 isHeader: false,
                 title: 'Репозитории',
-                path: {pathname: "https://www.kensoi.ru/repos"},
+                path: {pathname: "https://www.dshdev.ru/repos"},
                 target: "_self"
             },
         ],
@@ -72,17 +72,17 @@ function Footer() {
         <div className="footer-container" id="footer">
             <div className="footer-wrapper">
                 <div className="footer-logo">
-                    <div className='footer-contain footer-flex' onClick={() => {window.location.href = "https://www.kensoi.ru"}}>
+                    <div className='footer-contain footer-flex' onClick={() => {window.location.href = "https://www.dshdev.ru"}}>
                         <img src={Logo} alt="RoundICO" />
                         <div className="title">dsh</div>
                         <div className="page-status">dev</div>
                     </div>
                     {/* <div className='footer-contain'>
                         <p>
-                            kensoi.ru
+                            dshdev.ru
                             </p>
                         <p>
-                            admin@kensoi.ru
+                            admin@dshdev.ru
                             </p>
                     </div> */}
                 </div>

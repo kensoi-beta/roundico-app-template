@@ -12,12 +12,12 @@ function Logo() {
 }
 function Menu() {
     return <div className="header-menu">
-        <a href="https://kensoi.ru/repos/">
+        <a href="https://dshdev.ru/repos/">
             <div className="header-menu-button">
                 dshdev
             </div>
         </a>
-        <a href="https://kensoi.ru/packages/">
+        <a href="https://dshdev.ru/packages/">
             <div className="header-menu-button">
                 packages
             </div>

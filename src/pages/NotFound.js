@@ -9,7 +9,7 @@ const NotFound = ({headerState, setHeaderState}) => {
             Ой, вупс!
         </div>
         <div className="app-paragraph">
-            Вы забрели куда-то не туда. Попробуйте поискать нужную информацию <br /> <a href="https://kensoi.ru/pages/">на этой странице</a>?
+            Вы забрели куда-то не туда. Попробуйте поискать нужную информацию <br /> <a href="https://dshdev.ru/pages/">на этой странице</a>?
         </div>
     </div>
   }
