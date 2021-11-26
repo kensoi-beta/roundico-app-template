@@ -12,24 +12,9 @@ function Logo() {
 }
 function Menu() {
     return <div className="header-menu">
-        {/* <a href="https://kensoi.ru/packages/">
-            <div className="header-menu-button">
-                Packages
-            </div>
-        </a> */}
         <a href="https://kensoi.ru/repos/">
             <div className="header-menu-button">
                 dshdev
-            </div>
-        </a>
-        <a href="https://kensoi.ru/libragram/">
-            <div className="header-menu-button">
-                testbot-newvk
-            </div>
-        </a>
-        <a href="https://kensoi.ru/libragram/">
-            <div className="header-menu-button">
-                libragram
             </div>
         </a>
         <a href="https://kensoi.ru/packages/">
@@ -51,6 +36,7 @@ function MobileHeader () {
     return <div className="header-container">
         <div className="header-content">
             <Logo />
+            <Menu />
             <Optional />
         </div>
     </div>

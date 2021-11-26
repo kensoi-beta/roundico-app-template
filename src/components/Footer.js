@@ -74,7 +74,7 @@ function Footer() {
                 <div className="footer-logo">
                     <div className='footer-contain footer-flex' onClick={() => {window.location.href = "https://www.kensoi.ru"}}>
                         <img src={Logo} alt="RoundICO" />
-                        <div className="title">kensoi</div>
+                        <div className="title">dsh</div>
                         <div className="page-status">dev</div>
                     </div>
                     {/* <div className='footer-contain'>
