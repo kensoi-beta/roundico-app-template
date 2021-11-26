@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/roundico-app-template/static/css/main.32ff75c0.chunk.css",
-    "main.js": "/roundico-app-template/static/js/main.3097df22.chunk.js",
-    "main.js.map": "/roundico-app-template/static/js/main.3097df22.chunk.js.map",
+    "main.js": "/roundico-app-template/static/js/main.47c43750.chunk.js",
+    "main.js.map": "/roundico-app-template/static/js/main.47c43750.chunk.js.map",
     "runtime-main.js": "/roundico-app-template/static/js/runtime-main.502576d9.js",
     "runtime-main.js.map": "/roundico-app-template/static/js/runtime-main.502576d9.js.map",
-    "static/js/2.5dd1ebb4.chunk.js": "/roundico-app-template/static/js/2.5dd1ebb4.chunk.js",
-    "static/js/2.5dd1ebb4.chunk.js.map": "/roundico-app-template/static/js/2.5dd1ebb4.chunk.js.map",
+    "static/js/2.63c509b1.chunk.js": "/roundico-app-template/static/js/2.63c509b1.chunk.js",
+    "static/js/2.63c509b1.chunk.js.map": "/roundico-app-template/static/js/2.63c509b1.chunk.js.map",
     "static/js/3.790838d0.chunk.js": "/roundico-app-template/static/js/3.790838d0.chunk.js",
     "static/js/3.790838d0.chunk.js.map": "/roundico-app-template/static/js/3.790838d0.chunk.js.map",
     "index.html": "/roundico-app-template/index.html",
     "static/css/main.32ff75c0.chunk.css.map": "/roundico-app-template/static/css/main.32ff75c0.chunk.css.map",
-    "static/js/2.5dd1ebb4.chunk.js.LICENSE.txt": "/roundico-app-template/static/js/2.5dd1ebb4.chunk.js.LICENSE.txt",
+    "static/js/2.63c509b1.chunk.js.LICENSE.txt": "/roundico-app-template/static/js/2.63c509b1.chunk.js.LICENSE.txt",
     "static/media/fonts.css": "/roundico-app-template/static/media/TTCommons-ThinItalic.ce7708f0.eot",
     "static/media/roundico.8cae22dd.svg": "/roundico-app-template/static/media/roundico.8cae22dd.svg",
     "static/media/tomato.ff7d9726.png": "/roundico-app-template/static/media/tomato.ff7d9726.png"
   },
   "entrypoints": [
     "static/js/runtime-main.502576d9.js",
-    "static/js/2.5dd1ebb4.chunk.js",
+    "static/js/2.63c509b1.chunk.js",
     "static/css/main.32ff75c0.chunk.css",
-    "static/js/main.3097df22.chunk.js"
+    "static/js/main.47c43750.chunk.js"
   ]
 }
