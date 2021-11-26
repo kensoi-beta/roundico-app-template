@@ -1,7 +1,7 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
 import {useState} from 'react'
-import {SearchPage} from './pages/Search'
+import {ExamplePage} from './pages/Example'
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Header />
-      <SearchPage headerState = {headerState} setHeaderState={setHeaderState} />
+      <ExamplePage headerState = {headerState} setHeaderState={setHeaderState} />
       <Footer />
     </div>
   );
