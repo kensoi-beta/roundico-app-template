@@ -1,5 +1,3 @@
-import {nanoid} from 'nanoid'
-import {useState, useEffect} from 'react';
 import Tomato from '../img/tomato.png'
 
 
@@ -12,7 +10,7 @@ export const ExamplePage = ({headerState, setHeaderState}) => {
       </div>
       <div class="adaptive-block">
         <div class="adaptive-block-item centering">
-            <img src={Tomato} width = "192px"/>
+            <img src={Tomato} width = "192px" alt="tomato"/>
         </div>
         <div class="adaptive-block-item x-centering">
             <p>
