@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/repos/static/css/main.cc78e289.chunk.css",
-    "main.js": "/repos/static/js/main.7ab73872.chunk.js",
-    "main.js.map": "/repos/static/js/main.7ab73872.chunk.js.map",
-    "runtime-main.js": "/repos/static/js/runtime-main.7c4c3ea5.js",
-    "runtime-main.js.map": "/repos/static/js/runtime-main.7c4c3ea5.js.map",
-    "static/js/2.59a4c161.chunk.js": "/repos/static/js/2.59a4c161.chunk.js",
-    "static/js/2.59a4c161.chunk.js.map": "/repos/static/js/2.59a4c161.chunk.js.map",
-    "static/js/3.60e0e71a.chunk.js": "/repos/static/js/3.60e0e71a.chunk.js",
-    "static/js/3.60e0e71a.chunk.js.map": "/repos/static/js/3.60e0e71a.chunk.js.map",
-    "index.html": "/repos/index.html",
-    "static/css/main.cc78e289.chunk.css.map": "/repos/static/css/main.cc78e289.chunk.css.map",
-    "static/js/2.59a4c161.chunk.js.LICENSE.txt": "/repos/static/js/2.59a4c161.chunk.js.LICENSE.txt",
-    "static/media/fonts.css": "/repos/static/media/TTCommons-ThinItalic.ce7708f0.eot",
-    "static/media/roundico.8cae22dd.svg": "/repos/static/media/roundico.8cae22dd.svg"
+    "main.css": "/roundico-app-template/static/css/main.32ff75c0.chunk.css",
+    "main.js": "/roundico-app-template/static/js/main.d8d553df.chunk.js",
+    "main.js.map": "/roundico-app-template/static/js/main.d8d553df.chunk.js.map",
+    "runtime-main.js": "/roundico-app-template/static/js/runtime-main.502576d9.js",
+    "runtime-main.js.map": "/roundico-app-template/static/js/runtime-main.502576d9.js.map",
+    "static/js/2.5dd1ebb4.chunk.js": "/roundico-app-template/static/js/2.5dd1ebb4.chunk.js",
+    "static/js/2.5dd1ebb4.chunk.js.map": "/roundico-app-template/static/js/2.5dd1ebb4.chunk.js.map",
+    "static/js/3.790838d0.chunk.js": "/roundico-app-template/static/js/3.790838d0.chunk.js",
+    "static/js/3.790838d0.chunk.js.map": "/roundico-app-template/static/js/3.790838d0.chunk.js.map",
+    "index.html": "/roundico-app-template/index.html",
+    "static/css/main.32ff75c0.chunk.css.map": "/roundico-app-template/static/css/main.32ff75c0.chunk.css.map",
+    "static/js/2.5dd1ebb4.chunk.js.LICENSE.txt": "/roundico-app-template/static/js/2.5dd1ebb4.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/roundico-app-template/static/media/TTCommons-ThinItalic.ce7708f0.eot",
+    "static/media/roundico.8cae22dd.svg": "/roundico-app-template/static/media/roundico.8cae22dd.svg",
+    "static/media/tomato.ff7d9726.png": "/roundico-app-template/static/media/tomato.ff7d9726.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7c4c3ea5.js",
-    "static/js/2.59a4c161.chunk.js",
-    "static/css/main.cc78e289.chunk.css",
-    "static/js/main.7ab73872.chunk.js"
+    "static/js/runtime-main.502576d9.js",
+    "static/js/2.5dd1ebb4.chunk.js",
+    "static/css/main.32ff75c0.chunk.css",
+    "static/js/main.d8d553df.chunk.js"
   ]
 }
