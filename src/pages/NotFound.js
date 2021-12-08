@@ -1,8 +1,8 @@
 import Logo from '../img/roundico.svg'
 
 
-const NotFound = ({headerState, setHeaderState}) => {
-    setHeaderState(true);
+const NotFound = ({toolkit}) => {
+    toolkit.setHeaderState(true);
     return <div className="app-layout">
         <img src={Logo} className="app-icon" alt="RoundICO"/>
         <div className="app-name">
