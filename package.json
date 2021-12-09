@@ -1,7 +1,7 @@
 {
   "name": "roundico-app-template",
   "homepage": "https://kensoi.github.io/roundico-app-template/",
-  "version": "0.2.5",
+  "version": "0.2.7",
   "private": true,
   "dependencies": {
     "@emotion/styled": "^11.6.0",

@@ -4,8 +4,8 @@
 .footer {
     width: 100%;
     position: relative;
-    background: rgb(0, 0, 0);
-    color: white;
+    background: var(--footer-bg);
+    color: var(--text-color);
     user-select: none;
     font-family: 'TT Commons';
     box-sizing: border-box;
@@ -107,7 +107,7 @@
 }
 
 .footer a {
-    color: white!important;
+    color: var(--text-color)!important;
     text-decoration: none;
     cursor: pointer;
     width: fit-content;
@@ -132,14 +132,6 @@
     display: inline-flex;
     height: auto;
 }
-.footer-logo .title {
-    display: inline-flex;
-}
-.footer-logo .page-status{
-    display: inline-flex;
-    background: #FFF;
-    color: #000;
-}
 
 .footer-column {
     width: fit-content;
@@ -152,7 +144,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 12px 8px;
-    color: #a5a5a5;
+    color: var(--text-link-color);
     font-size: 18px;
 }
 .footer-link {
@@ -179,7 +171,6 @@
     height: auto;
     background: black;
     border-radius: 100%;
-    fill: gray;
 
 }
 .footer-top-logo.mobile img {

@@ -5,7 +5,7 @@
     width: 100%;
     height: fit-content;
     color: white;
-    z-index: 100;
+    z-index: 98;
 
 }
 .header-space {
@@ -13,13 +13,14 @@
 }
 .header-space-icon {
     width: 24px;
-    height: var( --header-height);
+    height: var(--header-height);
 }
 .header.mobile {
-    background: #000;
+    background: #000000;
 }
 .header.screen {
     background: #00000088;
+    -webkit-backdrop-filter: blur(32px);
     backdrop-filter: blur(32px);
 }
 
@@ -85,7 +86,7 @@
     font-family: "TT Commons";
     font-weight: 500;
     font-size: 24px;
-    color: #999;
+    color: var(--text-headline-color);
 }
 
 .header-button-icon {
@@ -101,9 +102,6 @@
     height: 50%;
     transform: translateY(8px);
 }
-
-
-
 .header-logo {
     width: var(--header-height);
     height: var(--header-height);
@@ -120,7 +118,6 @@
     height: auto;
     background: black;
     border-radius: 100%;
-    fill: gray;
 
 }
 .header-logo.mobile img {
@@ -131,3 +128,10 @@
     width: calc(var(--header-height) - 8px);
     margin: 4px;
 }
+
+.header a {
+    color: rgb(201, 201, 201)!important;
+} 
+.header a:hover {
+    color: white!important;
+} 

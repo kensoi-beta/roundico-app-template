@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import './header-stylesheet.css';
 import RoundICO from './../../img/roundico.svg';
+
+
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ClearIcon from '@mui/icons-material/Clear';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import {nanoid} from "nanoid";
@@ -59,10 +62,10 @@ function MobileHeader ({headerMenu, toolkit, visible}) {
     return <div className="header mobile" id="header">
         <div className="header-container">
             <div className="header-button-icon" onClick={toggleMenu}>
-                <MenuIcon />
+                {headerMenu.headerMenuState === "vis" ? <ClearIcon /> : <MenuIcon />}
             </div>
             <Logo type="mobile"/>
-            {toolkit.fcState ? <ToFooterArrow /> : (<div className="header-space-icon"></div>)}
+            {toolkit.fcState && headerMenu.headerMenuState === "invis"? <ToFooterArrow /> : (<div className="header-space-icon"></div>)}
         </div>
         <div className={["header-visible", headerMenu.headerMenuState].join(" ")}>
             <div className="header-headline">

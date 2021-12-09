@@ -16,7 +16,6 @@
     box-sizing: border-box;
     padding: 0 8px;
     margin: 8px;
-    /* border: 2px solid #FFFFFF; */
     color: #888888;
     font-family: 'Roboto'; 
     transition: 0.1s;
@@ -24,14 +23,14 @@
     transform: translateY(2px);
 }
 .tumblet .tumblet-item.tumblet-selected {
-    color: #FFFFFF;
+    color: var(--text-color);
     cursor: pointer;
-    border-color: #FFFFFF;
+    border-color: var(--text-color);
     transform: translateY(0);
 }
 
 .tumblet .tumblet-item.tumblet-selected:hover {
-    background: #FFFFFF;
-    color: #000000;
+    background: var(--text-color);;
+    color: var(--background-color);;
 
 }

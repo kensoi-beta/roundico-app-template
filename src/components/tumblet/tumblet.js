@@ -1,21 +1,8 @@
 import "./tumblet-stylesheet.css";
+import {nanoid} from "nanoid";
 
-// {
-//     left: {
-//         name: "test-1",
-//         context: "1"
-//     },
-//     center: {
-//         name: "test-2",
-//         context: "2"
-//     }
-//     right: {
-//         name: "test-2",
-//         context: "2"
-//     }
-// }
 function TumbletButton({item, context, setContext}) {
-  return <div className={context === item.context ? "tumblet-item" : "tumblet-item tumblet-selected"} onClick={() => {setContext(item.context)}}>
+  return <div key = {nanoid()} className={context === item.context ? "tumblet-item" : "tumblet-item tumblet-selected"} onClick={() => {setContext(item.context)}}>
     {item.name}
   </div>
 }
