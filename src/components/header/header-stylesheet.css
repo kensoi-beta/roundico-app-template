@@ -90,6 +90,7 @@
 
 .header-button-icon {
     display: inline;
+    min-width: calc(var(--header-height) / 2);
     line-height: var(--header-height);
     margin: 0;
     padding: 0!important;

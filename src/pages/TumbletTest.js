@@ -4,16 +4,16 @@ import {useState} from 'react'
 export const TumbletTest = ({toolkit}) => {
     toolkit.setHeaderState(true);
     toolkit.setFcState(true);
-    const contexts = {
-        left: {
+    const contexts = [
+        {
             name: "test-1",
             context: "Левая сторона ''test-1''"
         },
-        right: {
+        {
             name: "test-2",
             context: "Правая сторона ''test-2''"
         }
-        }
+    ]
     const [context, setContext] = useState(contexts.left.context); // state test
     
     return <div className="app-layout">

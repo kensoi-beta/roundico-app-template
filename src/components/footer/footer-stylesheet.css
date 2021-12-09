@@ -199,6 +199,8 @@
 
 .footer-button-icon {
     display: inline;
+    
+    min-width: calc(var(--footer-container-height) / 2);
     line-height: var(--footer-container-height);
     margin: 0;
     padding: 0!important;

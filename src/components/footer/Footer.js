@@ -62,13 +62,13 @@ function Footer({toolkit}) {
             {
                 isHeader: false,
                 title: 'VKBotKit',
-                path: {pathname: "https://dshdev.ru/vkbotkit/"},
+                path: {pathname: "https://www.dshdev.ru/vkbotkit/"},
                 target: "_blank"
             },
             {
                 isHeader: false,
                 title: 'Libragram',
-                path: {pathname: "https://dshdev.ru/libragram/"},
+                path: {pathname: "https://www.dshdev.ru/libragram/"},
                 target: "_blank"
             },
         ],

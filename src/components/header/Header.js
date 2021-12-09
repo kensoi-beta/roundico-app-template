@@ -7,26 +7,28 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {nanoid} from "nanoid";
 
 function Logo({type, visible}) {
-    return <div className={["header-logo", type, visible].join(" ")}>
-        <img src={RoundICO} alt="RoundICO"/>
-        {/* <div className="title">kensoi</div>
-        <div className="page-status">dev</div> */}
-    </div>
+    return <a href="https://www.dshdev.ru">
+        <div className={["header-logo", type, visible].join(" ")}>
+            <img src={RoundICO} alt="RoundICO"/>
+            {/* <div className="title">kensoi</div>
+            <div className="page-status">dev</div> */}
+        </div>
+    </a>
 }
 var MenuList = [
     {
         name: "главная",
-        href: "https://dshdev.ru/",
+        href: "https://www.dshdev.ru/",
         target: "_self"
     },
     {
         name: "репозитории",
-        href: "https://dshdev.ru/repos/",
+        href: "https://www.dshdev.ru/repos/",
         target: "_self"
     },
     {
         name: "контакты",
-        href: "https://dshdev.ru/contacts/",
+        href: "https://www.dshdev.ru/contacts/",
         target: "_self"
     },
 ]
@@ -64,7 +66,7 @@ function MobileHeader ({headerMenu, toolkit, visible}) {
         </div>
         <div className={["header-visible", headerMenu.headerMenuState].join(" ")}>
             <div className="header-headline">
-                DSHDEV-HEADER-MENU
+                REPO FINDER APP
             </div>
             {
                 MenuList.map(item => <a href={item.href} key={nanoid()}>
