@@ -14,7 +14,7 @@ export const TumbletTest = ({toolkit}) => {
             context: "Правая сторона ''test-2''"
         }
     ]
-    const [context, setContext] = useState(contexts.left.context); // state test
+    const [context, setContext] = useState(contexts[0].context); // state test
     
     return <div className="app-layout">
         <div className="app-name">
