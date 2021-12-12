@@ -58,7 +58,6 @@ body.dark .header.screen {
     box-sizing: border-box;
     padding: 0 5%;
     line-height: var(--header-height);
-    font-family: "TT Commons";
     font-size: 20px;
 }
 .header-visible .header-menu {
@@ -103,7 +102,6 @@ body.dark .header.screen {
     line-height: var(--header-height);
     margin: 0 calc(5% + 16px);
     padding: 0!important;
-    font-family: "TT Commons";
     font-weight: 500;
     font-size: 24px;
     color: var(--text-headline-color);

@@ -3,12 +3,11 @@ html {
 }
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'TT Commons', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'TT Commons';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 20px;
+    transition: 0.1s;
 }
 
 :root {
@@ -42,7 +41,6 @@ a:hover {
 }
   
 .app-name {
-    font-family: 'TT Commons'!important;
     text-align: center;
     margin: 16px 0;
     font-size: 48px;
