@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/roundico-app-template/static/css/main.cba550f8.chunk.css",
+    "main.css": "/roundico-app-template/static/css/main.ab8cbf99.chunk.css",
     "main.js": "/roundico-app-template/static/js/main.d88b33dd.chunk.js",
     "main.js.map": "/roundico-app-template/static/js/main.d88b33dd.chunk.js.map",
     "runtime-main.js": "/roundico-app-template/static/js/runtime-main.52b9ea3f.js",
@@ -10,7 +10,7 @@
     "static/js/3.ba225e13.chunk.js": "/roundico-app-template/static/js/3.ba225e13.chunk.js",
     "static/js/3.ba225e13.chunk.js.map": "/roundico-app-template/static/js/3.ba225e13.chunk.js.map",
     "index.html": "/roundico-app-template/index.html",
-    "static/css/main.cba550f8.chunk.css.map": "/roundico-app-template/static/css/main.cba550f8.chunk.css.map",
+    "static/css/main.ab8cbf99.chunk.css.map": "/roundico-app-template/static/css/main.ab8cbf99.chunk.css.map",
     "static/js/2.ea72d30d.chunk.js.LICENSE.txt": "/roundico-app-template/static/js/2.ea72d30d.chunk.js.LICENSE.txt",
     "static/media/fonts.css": "/roundico-app-template/static/media/TTCommons-ThinItalic.ce7708f0.eot",
     "static/media/roundico.8cae22dd.svg": "/roundico-app-template/static/media/roundico.8cae22dd.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.52b9ea3f.js",
     "static/js/2.ea72d30d.chunk.js",
-    "static/css/main.cba550f8.chunk.css",
+    "static/css/main.ab8cbf99.chunk.css",
     "static/js/main.d88b33dd.chunk.js"
   ]
 }
