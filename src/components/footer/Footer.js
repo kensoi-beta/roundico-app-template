@@ -1,13 +1,35 @@
 import './footer-stylesheet.css';
 import RoundICO from './../../img/roundico.svg';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import NightlightIcon from '@mui/icons-material/Nightlight';
 import { nanoid } from 'nanoid'
+import { Tumblet } from '../tumblet/tumblet.js'
 
 const ScrollToTop = () => {
     window.scrollTo(window.pageXOffset, 0);
 }
+
+const contexts = [
+    {
+        name: <LightModeIcon/>,
+        context: "l",
+        type: "svg"
+    },
+    {
+        name: <NightlightIcon/>,
+        context: "d",
+        type: "svg"
+    },
+    {
+        name: "AUTO",
+        context: "a"
+    }
+]
+
+
 function Logo({type}) {
-    return <div className={["footer-top-logo", type].join(" ")}>
+    return <div className={["footer-button-icon", type].join(" ")}>
         <img src={RoundICO} alt="RoundICO"/>
         {/* <div className="title">kensoi</div>
         <div className="page-status">dev</div> */}
@@ -40,15 +62,18 @@ function FooterColumn(row) {
     )
 }
 
-function FooterContainer() {
+function FooterContainer({toolkit}) {
     return <div className="footer-container" id="footer-container">
-        <Logo type="screen"/>
+        {toolkit.fcState ? <Logo type="screen"/> : ""}
         <div className="footer-container-middle">
-            dshdev
+            <div className="footer-container-tumblet">
+                <Tumblet tumbleConfig={contexts} context={toolkit.dm} setContext={toolkit.setDm}/>
+            </div>
         </div>
-        <div className="footer-button-icon" onClick={ScrollToTop}>
+        {toolkit.fcState ? <div className="footer-button-icon" onClick={ScrollToTop}>
             <ArrowUpwardIcon />
-        </div>
+        </div> : ""}
+        
     </div>
 }
 
@@ -109,9 +134,11 @@ function Footer({toolkit}) {
             },
         ],
     ]
+    
     return (
         <div className="footer" id="footer">
-            {toolkit.fcState ? <FooterContainer /> : (<div></div>)}
+            <FooterContainer toolkit = {toolkit}/>
+
             <div className="footer-wrapper">
                 {
                     footerTree.map(column => FooterColumn(column))

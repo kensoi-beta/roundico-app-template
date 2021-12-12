@@ -16,5 +16,12 @@ export const ExamplePage = ({toolkit}) => {
             </p>
         </div>
     </div>
+    <div className="app-paragraph">
+        <center>
+          <b>
+            Попробуйте также изменить страницу в app.js
+          </b>
+        </center>
     </div>
+  </div>
 }

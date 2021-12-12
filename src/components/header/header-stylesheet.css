@@ -18,11 +18,31 @@
 .header.mobile {
     background: #000000;
 }
-.header.screen {
+
+body.light .header.screen {
+    background: #000000;
+}
+
+body.dark .header.screen {
     background: #00000088;
     -webkit-backdrop-filter: blur(32px);
     backdrop-filter: blur(32px);
 }
+
+@media screen and (prefers-color-scheme: dark) {
+    body.auto .header.screen {
+        background: #00000088;
+        -webkit-backdrop-filter: blur(32px);
+        backdrop-filter: blur(32px);
+    }    
+}
+@media screen and (prefers-color-scheme: light) {
+    body.auto .header.screen {
+        background: #000000;
+    }    
+}
+
+
 
 :root {
     --header-height: 48px;

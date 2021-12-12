@@ -1,11 +1,11 @@
 :root {
-    --footer-container-height: 48px;
+    --footer-container-height: 72px;
 }
 .footer {
     width: 100%;
     position: relative;
-    background: var(--footer-bg);
-    color: var(--text-color);
+    background: #000000;
+    color: #ffffff;
     user-select: none;
     font-family: 'TT Commons';
     box-sizing: border-box;
@@ -132,7 +132,14 @@
     display: inline-flex;
     height: auto;
 }
+.footer-container-tumblet {
+    width: fit-content;
+    float: right;
+}
 
+.footer-container-tumblet .tumblet {
+    --border: #0026cf;
+}
 .footer-column {
     width: fit-content;
     text-align: left;
@@ -155,50 +162,60 @@
 
 .footer-container {
     width: 100%;
-    height: 48px;
+    height: var(--footer-container-height);
     line-height: 48px;
     display: flex;
     justify-content: space-between;
 
 }
 .footer-top-logo {
-    width: 48px;
-    height: 48px;
+    display: inline;
+    min-width: var(--footer-container-height);
+    height: var(--footer-container-height);
+    line-height: var(--footer-container-height);
+    margin: 0;
+    padding: 0!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-top-logo img {
-    display: inline;
+    width: 40px;
     height: auto;
     background: black;
     border-radius: 100%;
 
 }
-.footer-top-logo.mobile img {
-    width: calc(var(--footer-container-height) - 12px);
-    margin: 6px;
-}
-.footer-top-logo.screen img {
-    width: calc(var(--footer-container-height) - 8px);
-    margin: 4px;
-}
 .footer-container-middle {
     width: calc(100% - 96px);
-    font-weight: 400;
-    font-size: 22px;
-
+    height: var(--footer-container-height);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+@media screen and (orientation: portrait) {
+    .footer-container-middle {
+        justify-content: center;
+    }
 }
 
 .footer-button-icon {
-    display: inline;
-    
-    min-width: calc(var(--footer-container-height) / 2);
+    min-width: 40px;
+    height: var(--footer-container-height);
     line-height: var(--footer-container-height);
     margin: 0;
     padding: 0!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-button-icon svg {
     width: auto;
-    height: 50%;
-    transform: translateY(8px);
+    height: 24px;
+}
+.footer-button-icon img {
+    width: auto;
+    height: 40px;
 }
