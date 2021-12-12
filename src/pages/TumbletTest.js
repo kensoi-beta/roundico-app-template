@@ -2,8 +2,6 @@ import {Tumblet} from '../components/tumblet/tumblet.js';
 import {useState} from 'react'
 
 export const TumbletTest = ({toolkit}) => {
-    toolkit.setHeaderState(true);
-    toolkit.setFcState(true);
     const contexts = [
         {
             name: "test-1",

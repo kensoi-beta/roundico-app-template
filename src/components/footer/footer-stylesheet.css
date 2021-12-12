@@ -183,13 +183,16 @@
 
 }
 .footer-container-middle {
-    width: calc(100% - 96px);
+    width: calc(100% - 80px);
     height: var(--footer-container-height);
     display: flex;
     align-items: center;
     justify-content: right;
 }
 @media screen and (orientation: portrait) {
+    .footer-container {
+        justify-content: center;
+    }
     .footer-container-middle {
         justify-content: center;
     }

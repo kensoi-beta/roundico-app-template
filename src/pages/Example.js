@@ -1,7 +1,6 @@
 import Tomato from '../img/tomato.png'
 import "../components/adaptive/adaptive.css";
 export const ExamplePage = ({toolkit}) => {
-  toolkit.setHeaderState(true);
   return <div className="app-layout">
       <div className="app-name">
         Ваше первое приложение
