@@ -1,8 +1,10 @@
 import './footer-stylesheet.css';
-import RoundICO from './../../img/roundico.svg';
+
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import NightlightIcon from '@mui/icons-material/Nightlight';
+import { Icon } from './../RoundICO'
+
 import { nanoid } from 'nanoid'
 import { Tumblet } from '../tumblet/tumblet.js'
 
@@ -27,13 +29,15 @@ const contexts = [
     }
 ]
 
-
 function Logo({type}) {
-    return <div className={["footer-button-icon", type].join(" ")}>
-        <img src={RoundICO} alt="RoundICO"/>
-        {/* <div className="title">kensoi</div>
-        <div className="page-status">dev</div> */}
-    </div>
+    return <a href="https://www.dshdev.ru">
+        <div className={["footer-logo", type].join(" ")}>
+            <Icon />
+            kensoi/dshdev
+            {/* <div className="title">kensoi</div>
+            <div className="page-status">dev</div> */}
+        </div>
+    </a>
 }
 function FooterRow(item) {
     if (item.isHeader) {
@@ -61,20 +65,24 @@ function FooterColumn(row) {
         </div>
     )
 }
+function FooterHeader({toolkit}) {
 
-function FooterContainer({toolkit}) {
-    return <div className="footer-container" id="footer-container">
-        {toolkit.fcState ? <Logo type="screen"/> : ""}
-        <div className="footer-container-middle">
-            <div className="footer-container-tumblet">
-                <Tumblet tumbleConfig={contexts} context={toolkit.dm} setContext={toolkit.setDm}/>
-            </div>
-        </div>
-        {toolkit.fcState ? <div className="footer-button-icon" onClick={ScrollToTop}>
-            <ArrowUpwardIcon />
-        </div> : ""}
+    return <div className="footer-container fheader">
+        <Logo type="screen"/>
+        {
+            toolkit.fcState ? <div className="footer-button-icon" onClick={ScrollToTop}>
+                <ArrowUpwardIcon />
+            </div> : ""    
+        }
         
     </div>
+
+}
+function FooterFooter({toolkit}) {
+    return <div className="footer-container ffooter" id="footer-container">
+        <Tumblet tumbleConfig={contexts} context={toolkit.dm} setContext={toolkit.setDm}/>
+    </div>
+    
 }
 
 function Footer({toolkit}) {
@@ -82,7 +90,7 @@ function Footer({toolkit}) {
         [
             {
                 isHeader: true,
-                title: 'Проекты',
+                title: 'инструменты',
             },
             {
                 isHeader: false,
@@ -96,54 +104,67 @@ function Footer({toolkit}) {
                 path: {pathname: "https://www.dshdev.ru/libragram/"},
                 target: "_blank"
             },
+            {
+                isHeader: false,
+                title: 'Roundico App Template',
+                path: {pathname: "https://www.dshdev.ru/roundico-app-template/"},
+                target: "_blank"
+            },
         ],
+        
         [
             {
                 isHeader: true,
-                title: 'Каналы',
+                title: 'Приложения',
             },
             {
                 isHeader: false,
-                title: 'Kensoi Dev',
-                path: {pathname: "https://t.me/kensoi"},
+                title: 'репозитории',
+                path: {pathname: "https://www.dshdev.ru/repos/"},
                 target: "_blank"
             },
             {
                 isHeader: false,
-                title: 'Libragram Dev',
-                path: {pathname: "https://t.me/libragramdev"},
+                title: 'packages',
+                path: {pathname: "https://www.dshdev.ru/packages/"},
                 target: "_blank"
             },
         ],
         [
             {
                 isHeader: true,
-                title: 'Страницы',
+                title: 'Об авторе',
             },
             {
                 isHeader: false,
-                title: 'Контакты',
-                path: {pathname: "https://www.dshdev.ru/contact/"},
-                target: "_self"
+                title: 'контакты',
+                path: {pathname: "https://www.dshdev.ru/contacts/"},
+                target: "_blank"
             },
             {
                 isHeader: false,
-                title: 'Репозитории',
-                path: {pathname: "https://www.dshdev.ru/repos"},
-                target: "_self"
+                title: 'каналы',
+                path: {pathname: "https://www.dshdev.ru/channels/"},
+                target: "_blank"
+            },
+            {
+                isHeader: false,
+                title: 'ссылки',
+                path: {pathname: "https://www.dshdev.ru/links/"},
+                target: "_blank"
             },
         ],
     ]
     
     return (
         <div className="footer" id="footer">
-            <FooterContainer toolkit = {toolkit}/>
-
+            <FooterHeader toolkit = {toolkit}/>
             <div className="footer-wrapper">
                 {
                     footerTree.map(column => FooterColumn(column))
                 }
             </div>
+            <FooterFooter toolkit = {toolkit}/>
         </div>
     );
 }

@@ -11,14 +11,17 @@ export const ExamplePage = ({toolkit}) => {
         </div>
         <div className="adaptive-block-item x-centering">
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Привет! Эта страница была создана при помощи шаблона RoundICO App Template. 
+            </p>
+            <p>
+              Попробуйте посетить так же следующие страницы: <a href="./roundico-app-template/tumblet"> тумблеты, </a><a href="./roundico-app-template/note-test"> уведомления, </a>
             </p>
         </div>
     </div>
     <div className="app-paragraph">
         <center>
           <b>
-            Попробуйте также изменить страницу в app.js
+            Попробуйте также изменить страницу в AppWrapper.js
           </b>
         </center>
     </div>

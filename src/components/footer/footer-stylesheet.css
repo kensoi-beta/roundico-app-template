@@ -1,5 +1,7 @@
 :root {
-    --footer-container-height: 72px;
+    --footer-container-height: 48px;
+    --not-selected: rgb(201, 201, 201);
+    --selected: rgb(255,255,255);
 }
 .footer {
     width: 100%;
@@ -20,78 +22,9 @@
     z-index: 3;
 
 }
-@media screen and (max-width: 1024px) {
-    .footer-logo {
-        width: 100%;
-        justify-content: center;
-    }
-    .footer-logo img {
-        width: 72px;
-    }
-
-    .footer-logo .title {
-        font-size: 20px;
-        font-weight: 500;
-        padding-top: 2px;
-        margin: 0 4px 0 0;
-    }
-    .footer-logo .page-status{
-        font-size: 20px;
-        font-weight: 500;
-        padding: 0 3px;
-        margin: 2px 0 0 0;
-        border-radius: 2px;
-    }
-
-}
-@media screen and (min-width: 1024px) {
-    .footer-logo img {
-        width: 96px;
-    }
-    .footer-logo .title {
-        font-size: 30px;
-        font-weight: 500;
-        margin: 0 12px 0 0;
-    }
-    .footer-logo .page-status{
-        font-size: 30px;
-        padding: 0 4px;
-        font-weight: 500;
-        border-radius: 2px;
-    }
-
-}
-@media screen and (max-width: 768px) {
-    .footer-logo img {
-        width: 72px;
-    }
-
-    .footer-logo .title {
-        font-size: 20px;
-        font-weight: 500;
-        padding-top: 2px;
-        margin: 0 4px 0 0;
-    }
-    .footer-logo .page-status{
-        font-size: 20px;
-        font-weight: 500;
-        padding: 0 3px;
-        margin: 2px 0 0 0;
-        border-radius: 2px;
-    }
-
-}
 @media screen and (min-width: 768px) {
     .footer-wrapper {
         grid-template-columns: repeat(auto-fill, 192px);
-    }
-    .footer-logo {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        /* grid-column-start: 1;
-        grid-column-end: 7; */
     }
     .footer-space {
         grid-column-start: 2;
@@ -106,13 +39,14 @@
 }
 
 .footer a {
-    color: var(--text-color)!important;
+    color: var(--not-selected)!important;
     text-decoration: none;
     cursor: pointer;
     width: fit-content;
 }
 .footer a:hover {
     text-decoration: underline;
+    color: var(--selected)!important;
 }
 
 .footer-contain {
@@ -120,16 +54,9 @@
     margin-bottom: 32px;
     cursor: pointer;
 }
-.footer-logo p {
-    margin: 8px 0;
-}
 .footer-flex {
     display: flex;
     align-items: center;
-}
-.footer-logo img {
-    display: inline-flex;
-    height: auto;
 }
 .footer-container-tumblet {
     width: fit-content;
@@ -150,18 +77,14 @@
     font-size: 18px;
 }
 .footer-link {
-    text-transform: lowercase;
     margin: 4px 8px;
     font-size: 20px;
 }
 
 .footer-container {
     width: 100%;
-    height: var(--footer-container-height);
-    line-height: 48px;
     display: flex;
     justify-content: space-between;
-
 }
 .footer-top-logo {
     display: inline;
@@ -182,18 +105,17 @@
     border-radius: 100%;
 
 }
-.footer-container-middle {
-    width: calc(100% - 80px);
+.footer-container.fheader {
     height: var(--footer-container-height);
-    display: flex;
-    align-items: center;
+    line-height: var(--footer-container-height);
+}
+.footer-container.ffooter {
+    height: 72px;
+    line-height: 72px;
     justify-content: right;
 }
 @media screen and (orientation: portrait) {
-    .footer-container {
-        justify-content: center;
-    }
-    .footer-container-middle {
+    .footer-container.ffooter {
         justify-content: center;
     }
 }
@@ -207,7 +129,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.1s;
+    cursor: pointer;
+    color: rgb(201, 201, 201)!important;
+    fill: rgb(201, 201, 201)!important;
 }
+.footer-button-icon:hover {
+    color: rgb(255, 255, 255)!important;
+    fill: rgb(255, 255, 255)!important;
+}
+.footer-button-icon:active svg {
+    transform: translateY(2px);
+}
+
+
 
 .footer-button-icon svg {
     width: auto;
@@ -216,4 +151,34 @@
 .footer-button-icon img {
     width: auto;
     height: 40px;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    fill: rgb(201, 201, 201)!important;
+    color: rgb(201, 201, 201)!important;
+}
+
+.footer-logo img {
+    display: inline;
+    height: auto;
+    background: black;
+    border-radius: 100%;
+
+}
+.footer-logo img {
+    width: calc(var(--footer-container-height) - 12px);
+    margin: 6px;
+}
+.footer-logo svg {
+    display: inline;
+    height: auto;
+    background: black;
+    border-radius: 100%;
+    width: calc(var(--footer-container-height) - 12px);
+    margin: 6px;
+}
+.footer-logo:hover {
+    color:rgb(255, 255, 255)!important;
+    fill: rgb(255, 255, 255)!important;
 }

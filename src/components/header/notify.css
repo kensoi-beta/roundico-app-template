@@ -1,0 +1,53 @@
+/* .header .notifications {
+} */
+.header .Notify-block {
+    width: 100%;
+    max-width: 640px;
+    margin: 4px auto;
+    padding: 10px 20px 12px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.header .Notify-block.removed {
+    position: absolute;
+    top: -512px;
+    transition: ease-in-out 0.1s;
+
+}
+body.dark .header.screen .Notify-block::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    content: " ";
+    
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.37);
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    z-index: 65;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.6);
+}
+.header .Notify-block .Notify-headline {
+    position: relative;
+    z-index: 66;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+}
+.header .Notify-block .Notify-headline .Notify-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+.header .Notify-block .Notify-headline .Notify-reset {
+    cursor: pointer;
+}
+.header .Notify-block .Notify-descr {
+    cursor: pointer;
+    position: relative;
+    z-index: 66;
+}
